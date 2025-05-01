@@ -8,7 +8,8 @@
 		"start": "next start",
 		"lint": "next lint",
 		"lint:fix": "next lint --fix",
-		"pretty-quick": "pretty-quick"
+		"pretty-quick": "pretty-quick",
+		"prepare": "husky"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "pretty-quick --staged"
@@ -29,6 +30,7 @@
 		"eslint-config-next": "15.3.1",
 		"eslint-config-prettier": "^10.1.2",
 		"eslint-plugin-prettier": "^5.2.6",
+		"husky": "^9.1.7",
 		"prettier": "^3.5.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
 		"pretty-quick": "^4.1.1",
