@@ -41,6 +41,9 @@
 	"tailwindCSS.experimental.classRegex": [
 		["tva\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
 	],
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
 
 	// git
 	"git.autofetch": true
