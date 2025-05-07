@@ -1,2 +1,2 @@
-yarn pretty-quick --staged
+yarn format:staged
 yarn build
