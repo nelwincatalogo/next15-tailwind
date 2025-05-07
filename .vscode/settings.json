@@ -7,6 +7,8 @@
 	"editor.stickyScroll.enabled": true,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.inlineSuggest.syntaxHighlightingEnabled": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.tsdk": "node_modules/typescript/lib",
 
 	//   inlay hints
 	"editor.inlayHints.enabled": "on",
@@ -42,6 +44,9 @@
 	"tailwindCSS.experimental.classRegex": [
 		["tva\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
 	],
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
 	"tailwind-fold.autoFold": true,
 
 	// better comments

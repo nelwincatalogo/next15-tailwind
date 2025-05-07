@@ -13,6 +13,8 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
+		"@hookstate/core": "^4.0.2",
+		"@hookstate/devtools": "^4.0.3",
 		"next": "15.3.2",
 		"react": "^19",
 		"react-dom": "^19"
@@ -21,6 +23,7 @@
 		"@eslint/eslintrc": "^3",
 		"@ianvs/prettier-plugin-sort-imports": "^4.4.1",
 		"@tailwindcss/postcss": "^4",
+		"@types/lodash.merge": "^4.6.9",
 		"@types/node": "^22",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
