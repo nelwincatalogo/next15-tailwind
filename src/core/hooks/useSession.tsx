@@ -4,8 +4,7 @@ import { hookstate, useHookstate } from '@hookstate/core';
 import merge from 'lodash.merge';
 
 import axios from '@/core/api';
-
-import { localstored } from '../store/plugins/localStored';
+import { localstored } from '@/store/plugins/localStored';
 
 // Initial State
 const initialState = {

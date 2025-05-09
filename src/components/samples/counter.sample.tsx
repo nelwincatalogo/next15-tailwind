@@ -3,7 +3,7 @@
 import { useHookstate, useHookstateEffect } from '@hookstate/core';
 
 import useClientSide from '@/core/hooks/utils/useClientSide';
-import { useGlobalStatePersist } from '@/core/store/persist';
+import { useGlobalStatePersist } from '@/store/persist';
 
 export default function CounterSample() {
 	const gStateP = useGlobalStatePersist();
