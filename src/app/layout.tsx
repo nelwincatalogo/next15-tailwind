@@ -1,22 +1,12 @@
 import '@/styles/globals.css';
 
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 
+import { geistMono, geistSans, inter, poppins } from '@/components/common/font';
 import { Toaster } from '@/components/ui/sonner';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { isDevMode } from '@/core/constants';
 import ReactQueryProvider from '@/core/providers/lib/react-query';
-
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
-	subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://vercel.com'),
@@ -54,7 +44,7 @@ export default function RootLayout({
 				)}
 			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} font-sans antialiased`}
 			>
 				<ReactQueryProvider>
 					<TooltipProvider>{children}</TooltipProvider>

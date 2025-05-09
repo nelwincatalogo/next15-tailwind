@@ -4,8 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+	/* fonts */
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
+	--font-poppins: var(--font-poppins);
+	--font-inter: var(--font-inter);
 
 	/* shadcn ui */
 	--color-sidebar-ring: var(--sidebar-ring);
