@@ -47,7 +47,6 @@
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
-	"tailwind-fold.autoFold": true,
 
 	// better comments
 	"better-comments.multilineComments": true,
@@ -101,5 +100,24 @@
 	],
 
 	// git
-	"git.autofetch": true
+	"git.autofetch": true,
+	"git-worktree-manager.worktreeCopyIgnores": [
+		"**/node_modules/**",
+		"**/dist/**",
+		"**/.git/**",
+		"**/.svn/**",
+		"**/.hg/**",
+		"**/CVS/**",
+		"**/Thumbs.db/**",
+		"**/.DS_Store",
+		"**/out/**",
+		"**/.next/**",
+		"**/.vscode/**"
+	],
+	"git-worktree-manager.worktreeCopyPatterns": [
+		".env",
+		".vscode/**",
+		"*.local",
+		".env.local"
+	]
 }
