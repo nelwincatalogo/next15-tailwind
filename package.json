@@ -15,6 +15,8 @@
 	"dependencies": {
 		"@hookstate/core": "^4.0.2",
 		"@hookstate/devtools": "^4.0.3",
+		"@tanstack/react-query": "^5.75.5",
+		"@tanstack/react-query-devtools": "^5.75.5",
 		"next": "15.3.2",
 		"react": "^19",
 		"react-dom": "^19",
@@ -24,6 +26,7 @@
 		"@eslint/eslintrc": "^3",
 		"@ianvs/prettier-plugin-sort-imports": "^4.4.1",
 		"@tailwindcss/postcss": "^4",
+		"@tanstack/eslint-plugin-query": "^5.74.7",
 		"@types/lodash.merge": "^4.6.9",
 		"@types/node": "^22",
 		"@types/react": "^19",
