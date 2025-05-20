@@ -6,7 +6,7 @@ import { geistMono, geistSans, inter, poppins } from '@/components/common/font';
 import { Toaster } from '@/components/ui/sonner';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { isDevMode } from '@/core/constants';
-import ReactQueryProvider from '@/core/providers/lib/react-query';
+import ReactQueryProvider from '@/providers/lib/react-query';
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://vercel.com'),
