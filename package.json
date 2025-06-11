@@ -7,10 +7,10 @@
 		"build": "next build",
 		"start": "next start",
 		"start:static": "npx serve@latest out",
-		"lint": "next lint",
+		"lint": "next lint && tsc --noEmit --skipLibCheck",
 		"lint:fix": "next lint --fix",
 		"format": "pretty-quick",
-		"format:staged": "pretty-quick --staged",
+		"format:staged": "pretty-quick --staged && tsc --noEmit --skipLibCheck",
 		"prepare": "husky"
 	},
 	"dependencies": {
