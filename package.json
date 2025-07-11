@@ -83,7 +83,7 @@
 		"eslint-plugin-unused-imports": "^4",
 		"husky": "^9",
 		"prettier": "^3",
-		"prettier-plugin-tailwindcss": "^0.6.13",
+		"prettier-plugin-tailwindcss": "^0.6",
 		"pretty-quick": "^4",
 		"tailwindcss": "^4",
 		"tw-animate-css": "^1",
