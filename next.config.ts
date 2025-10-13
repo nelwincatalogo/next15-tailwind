@@ -1,5 +1,7 @@
 import { PHASE_PRODUCTION_BUILD } from 'next/constants';
 
+import { isEnableDevTools } from '@/core/constants';
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 module.exports = async (phase: string, { defaultConfig }: any) => {
 	/**
@@ -10,6 +12,7 @@ module.exports = async (phase: string, { defaultConfig }: any) => {
 		output: 'export', // To enable a static export
 		trailingSlash: true, // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
 		reactStrictMode: true, // prevent double rerendering
+		devIndicators: isEnableDevTools,
 	};
 
 	// Apply production-only configurations here

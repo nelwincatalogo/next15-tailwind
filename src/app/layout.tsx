@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import { geistMono, geistSans, inter, poppins } from '@/components/common/font';
 import { Toaster } from '@/components/ui/sonner';
 import { TooltipProvider } from '@/components/ui/tooltip';
-import { isDevMode } from '@/core/constants';
+import { isDevMode, isEnableDevTools } from '@/core/constants';
 import ReactQueryProvider from '@/providers/lib/react-query';
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				{isDevMode && (
+				{isDevMode && isEnableDevTools && (
 					<script
 						src="https://unpkg.com/react-scan/dist/auto.global.js"
 						async
