@@ -17,15 +17,15 @@ export interface LocalStored {
 // Using any here is acceptable as it's an internal interface for the plugin
 
 interface ExtensionMethods {
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	// oxlint-disable-next-line @typescript-eslint/no-explicit-any
 	identifier?: (state: State<any, any>) => string;
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	// oxlint-disable-next-line @typescript-eslint/no-explicit-any
 	serialize?: (s: State<any, any>) => () => string;
 
 	deserialize?: (
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		// oxlint-disable-next-line @typescript-eslint/no-explicit-any
 		state: State<any, any>
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		// oxlint-disable-next-line @typescript-eslint/no-explicit-any
 	) => (s: State<any, any>) => (v: string) => void;
 }
 
@@ -33,7 +33,7 @@ export function localstored<S, E>(options?: {
 	key?: string;
 	engine?: StoreEngine;
 	initializer?: () => Promise<S>;
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	// oxlint-disable-next-line @typescript-eslint/no-explicit-any
 	onRestored?: (s: any) => void;
 }): ExtensionFactory<S, E, LocalStored> {
 	return () => {
@@ -51,11 +51,11 @@ export function localstored<S, E>(options?: {
 			// Replace with your desired behavior for non-browser environments
 			// Create a dummy storage engine for server-side rendering
 			storageEngine = options?.engine || {
-				// eslint-disable-next-line @typescript-eslint/no-unused-vars
+				// oxlint-disable-next-line @typescript-eslint/no-unused-vars
 				getItem: (_key: string) => Promise.resolve(null),
-				// eslint-disable-next-line @typescript-eslint/no-unused-vars
+				// oxlint-disable-next-line @typescript-eslint/no-unused-vars
 				setItem: (_key: string, _value: string) => Promise.resolve(),
-				// eslint-disable-next-line @typescript-eslint/no-unused-vars
+				// oxlint-disable-next-line @typescript-eslint/no-unused-vars
 				removeItem: (_key: string) => Promise.resolve(),
 			};
 		}

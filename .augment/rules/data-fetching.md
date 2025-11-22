@@ -48,12 +48,14 @@ description: 'Use this rule when you are implementing data fetching feature or u
       // src/core/api/marketplace.ts
       import { IMarketplaceProduct } from '@/components/samples/react-query/types';
 
-      export const getTopMarketplaceProducts = async (): Promise<IMarketplaceProduct[]> => {
-        const response = await fetch('/api/marketplace/top-products');
-        if (!response.ok) {
-          throw new Error('Failed to fetch top products');
-        }
-        return response.json();
+      export const getTopMarketplaceProducts = async (): Promise<
+      	IMarketplaceProduct[]
+      > => {
+      	const response = await fetch('/api/marketplace/top-products');
+      	if (!response.ok) {
+      		throw new Error('Failed to fetch top products');
+      	}
+      	return response.json();
       };
 
       // src/components/samples/react-query/hooks/useMarketplaceTopProducts.tsx
@@ -62,9 +64,9 @@ description: 'Use this rule when you are implementing data fetching feature or u
       import { getTopMarketplaceProducts } from '@/core/api/marketplace';
 
       export const useMarketplaceTopProducts = () => {
-        return useQuery({
-          queryKey: QUERY_KEYS.MARKETPLACE.TOP_PRODUCTS,
-          queryFn: getTopMarketplaceProducts,
-        });
+      	return useQuery({
+      		queryKey: QUERY_KEYS.MARKETPLACE.TOP_PRODUCTS,
+      		queryFn: getTopMarketplaceProducts,
+      	});
       };
       ```

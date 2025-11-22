@@ -1,6 +1,6 @@
 # Next.js 15 Tailwind Template
 
-A modern, feature-rich starter template for Next.js 15 with Tailwind CSS, TypeScript, ESLint, and Prettier.
+A modern, feature-rich starter template for Next.js 15 with Tailwind CSS, TypeScript, Oxlint, and Prettier.
 
 ## Features
 
@@ -9,8 +9,8 @@ A modern, feature-rich starter template for Next.js 15 with Tailwind CSS, TypeSc
 - 🔥 **Turbopack** - For faster development experience
 - ⚛️ **React 19** - Latest React version
 - 📝 **TypeScript** - Type safety with full configuration
-- 🧹 **ESLint & Prettier** - Code quality and formatting
-  - TanStack Query plugin for ESLint
+- 🧹 **Oxlint & Prettier** - Code quality and formatting
+  - React, Next.js, TypeScript, JSX A11y, and Import plugins
   - Unused imports detection
   - Tailwind CSS plugin
 - 🔍 **Import Sorting** - Organized imports with @ianvs/prettier-plugin-sort-imports
@@ -70,8 +70,8 @@ npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next15-t
 
 ### Code Quality Tools
 
-- `yarn lint` - Run ESLint to check for code issues
-- `yarn lint:fix` - Run ESLint with automatic fixes
+- `yarn lint` - Run Oxlint to check for code issues
+- `yarn lint:fix` - Run Oxlint with automatic fixes and format code
 - `yarn format` - Run Prettier to format code changes
 - `yarn format:staged` - Run Prettier to format staged code changes
 
@@ -110,7 +110,7 @@ yarn build
 - `next.config.ts` - Next.js configuration
 - `tsconfig.json` - TypeScript configuration with path aliases
 - `postcss.config.mjs` - PostCSS configuration
-- `eslint.config.mjs` - ESLint configuration (flat config)
+- `.oxlintrc.json` - Oxlint configuration
 - `.prettierrc` - Prettier configuration
 - `components.json` - Shadcn UI configuration
 - `env.ts` - Environment variables validation

@@ -17,34 +17,30 @@
 
 	//   formatting
 	"editor.wordWrap": "on",
-	"editor.formatOnSave": true,
-	"eslint.format.enable": true,
+	"editor.formatOnSave": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"oxc.enable": true,
+	"oxc.lint.run": "onType",
+	"oxc.trace.server": "off",
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit"
+		"source.organizeImports": "explicit"
 	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
+	"errorLens.enabled": true,
+	"errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
+	"errorLens.excludeBySource": [],
 
 	// tailwind
 	"tailwindCSS.experimental.classRegex": [
 		["tva\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
 	],
+	"tailwindCSS.lint.cssConflict": "warning",
+	"tailwindCSS.lint.invalidApply": "error",
+	"tailwindCSS.lint.invalidScreen": "error",
+	"tailwindCSS.lint.invalidVariant": "error",
+	"tailwindCSS.lint.invalidConfigPath": "error",
+	"tailwindCSS.lint.invalidTailwindDirective": "error",
+	"tailwindCSS.lint.recommendedVariantOrder": "warning",
+	"tailwindCSS.validate": true,
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},

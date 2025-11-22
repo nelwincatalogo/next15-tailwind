@@ -19,7 +19,8 @@
 		"seatonjiang.gitmoji-vscode",
 
 		// formatting
-		"dbaeumer.vscode-eslint",
+		// "dbaeumer.vscode-eslint",
+		"oxc.oxc-vscode",
 		"esbenp.prettier-vscode",
 		"usernamehw.errorlens",
 		"aaron-bond.better-comments",

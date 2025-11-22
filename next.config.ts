@@ -2,7 +2,7 @@ import { PHASE_PRODUCTION_BUILD } from 'next/constants';
 
 import { isEnableDevTools } from '@/core/constants';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// oxlint-disable-next-line @typescript-eslint/no-explicit-any
 module.exports = async (phase: string, { defaultConfig }: any) => {
 	/**
 	 * @type {import('next').NextConfig}
