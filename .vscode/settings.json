@@ -17,7 +17,7 @@
 
 	//   formatting
 	"editor.wordWrap": "on",
-	"editor.formatOnSave": false,
+	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"oxc.enable": true,
 	"oxc.lint.run": "onType",
